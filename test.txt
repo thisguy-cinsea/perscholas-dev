@@ -1,0 +1,70 @@
+function printLine(length) {
+    // function definition goes here
+    if (length > 0){
+        var shapeLength = "";
+        for(var i = 0; i<length; i++ ){
+            shapeLength = "*" + shapeLength;
+        };
+        console.log(shapeLength);
+    };
+}
+
+function printBox(width, height) {
+    // function definition goes here
+    for(var i = 0; i < height; i++){
+        printLine(width);
+    };
+}
+
+
+function printCheckerboard(width, height) {
+    // function definition goes here
+    do{
+        console.log("width " + width);
+        console.log("height " + height);
+        if (width > 1 && height > 1){
+            var checkerLength = "";
+            for (var j = 1; j <= height; j++ ){
+                console.log("j = " + j);
+                for(var i = 1; i <= width; i++ ){
+                    console.log("i = " + i);
+                    console.log(i % 2);
+                    if((i % 2) == 0){
+                        checkerLength = checkerLength + "*";
+                    } else {
+                        checkerLength = checkerLength + " ";
+                    }
+                    console.log(checkerLength);
+
+                };
+            };
+            console.log(width);
+            console.log(height);
+        };
+    } 
+    while(width < 2 && height < 2){
+        width = prompt("Enter width of box");
+        height = prompt("Enter height of box");
+    };
+    // for(var i = 0; i < height; i++){    
+}
+
+
+
+function printCross(length) {
+    // function definition goes here
+}
+
+
+
+function printLowerTriangle(length) {
+    // function definition goes here
+}
+
+function printUpperTriangle(length) {
+    // function definition goes here
+}
+
+function printUpsideDownTrapezoid(width, height) {
+    // function definition goes here
+}
